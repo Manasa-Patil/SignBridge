@@ -1,60 +1,82 @@
-SignBridge – ISL Learning System 🤟🎓
+# 🤟 SignBridge – Inclusive ISL Learning Platform
 
-SignBridge is an EdTech-focused AI system that helps learners understand and practice Indian Sign Language (ISL) using real-time gesture recognition, interactive animations, and audio/video–based ISL learning tools.
+**SignBridge** is an AI-powered inclusive education tool designed to help learners practice and understand **Indian Sign Language (ISL)**.  
+It enables students, teachers, and peers to learn ISL through real-time gesture recognition, audio/video-based ISL animations, and interactive learning modules.
 
-This project promotes inclusive education, making ISL learning accessible for students, teachers, and peers.
+---
 
-🚀 Features:
+## 📌 Features
 
-🤟 ISL → Text recognition using webcam
+- 🤟 ISL → Text recognition using webcam  
+- 🔊 Audio → ISL animation output  
+- 🎥 Video → ISL gesture translation  
+- 👐 Real-time gesture tracking (MediaPipe)  
+- ⚡ Fast & lightweight React (Vite) frontend  
+- 🌐 Backend API deployed on Render  
+- 🎓 Built for inclusive ISL education & learning
 
-🔊 Audio → ISL animation output
+---
 
-🎥 Video → ISL gesture translation
+## 🧠 Tech Stack
 
-👐 Real-time gesture tracking (MediaPipe)
+### 🔙 Backend
+- Node.js / Python (model inference & APIs)
+- Custom ISL recognition ML model  
+- Speech-to-text pipeline for audio/video processing  
+- Quiz generation module  
+- Hosted on Render
 
-⚡ Fast & lightweight React (Vite) frontend
+### 🌐 Frontend
+- React + Vite  
+- Tailwind CSS  
+- Framer Motion  
+- MediaPipe (Hand Tracking)  
+- Axios for API communication  
 
-🌐 Backend API deployed on Render
+---
 
-🖥️ Frontend Setup:
+## 🎓 Educational Purpose
 
-1.cd client
+SignBridge promotes **inclusive learning** by offering:  
+- Real-time ISL practice  
+- Audio/video-based ISL learning  
+- Interactive animations  
+- Assisted ISL comprehension for classrooms and peer learning
 
-2.npm install
+---
 
-3.npm run dev
+## 🧠 How It Works
 
+### ISL → Text
+1. Webcam feed activated  
+2. Frames sent to backend  
+3. MediaPipe extracts hand landmarks  
+4. ML model predicts gesture  
+5. UI displays recognized text  
 
-Local URL:
+### Audio/Video → ISL
+1. Extract speech → convert to text  
+2. Text mapped to ISL vocabulary  
+3. UI displays ISL animation  
+
+---
+## 🖥️ Frontend Setup
+
+```bash
+cd client
+npm install
+npm run dev
+
+Local URL:  
 http://localhost:5173/
+```
+---
 
-🔗 Backend Setup:
+## 🔗 Backend Setup
 
-The backend is already deployed.
+Backend is already deployed.
 
-Add this to your frontend .env file:
+Add this in your `client/.env` file:
+
 VITE_API_BASE_URL=https://signbridgebackend-g6zh.onrender.com
 
-🧠 How It Works:
-
-ISL → Text
-
-User enables webcam
-
-Frames are sent to backend
-
-MediaPipe extracts hand landmarks
-
-ML model predicts the ISL gesture
-
-Text appears instantly in the UI
-
-Audio/Video → ISL
-
-Audio/Video → converted to speech-to-text
-
-Text mapped to ISL vocabulary
-
-Matching ISL animation displayed
